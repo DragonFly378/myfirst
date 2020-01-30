@@ -65,7 +65,7 @@ body {
 
 .container {
 
-	width: 800px;
+	width: 960px;
 	margin: auto;
 	background-color: rgb(0,0,0,0.5);
 	
@@ -107,23 +107,32 @@ body {
 .gambar {
 	height: 400px;
 	background-image: url(gambar2.jpg);
-	background-size: cover;
-	background-position: 100%;
+	background-size: 100%;
 	border-bottom: 5px solid rgb(0,0,0,0.5);
 	border-top: 5px solid rgb(0,0,0,0.5);
+	background-position: 100%;
 
 }
 
-.content{
+
+
+/* isi nya gais */
+
+.main{
+	width: 650px;
 	padding: 20px;
+	text-align: justify;
+	box-sizing: border-box;
+	float: left;
+
 }
 
-.content h2{
+.main h2{
 	font-size: 25px;
 	font-weight: bold;
 }
 
-.content .penulis{
+.main .penulis{
 	font : 13px/28px verdana, sans-serif ;
 	padding-top: 6px;
 }
@@ -137,3 +146,56 @@ body {
 .penulis a:hover {
 	background-color: black;
 	color : white;
+}
+
+
+/* side bar */
+
+.sidebar{
+	width: 250px;
+	padding: 20px;
+	float: right;
+	background-color: rgb(2, 79, 84, 0.3);
+	border-left: 3px dashed white;
+	border-bottom: 3px dashed white;
+
+}
+
+.sidebar h3{
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.sidebar img {
+	margin:auto;
+	display: block;
+	float: left;	
+	width: 70px
+	height: 70px;
+	padding-right: 10px;
+}
+
+.sidebar p{
+	font : 13px/28px calibri, sans-serif;
+	text-align: justify;
+}
+
+
+
+
+/* clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
